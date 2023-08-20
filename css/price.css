@@ -1,0 +1,25 @@
+.price {
+  padding: 62px 0 77px;
+}
+.price__title {
+  margin: 0 auto 55px;
+  max-width: 900px;
+}
+.price__content {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1023px) {
+  .price {
+    padding: 40px 0;
+  }
+  .price__title {
+    margin-bottom: 30px;
+    max-width: 900px;
+  }
+}
+@media (max-width: 767px) {
+  .price .two-blocks {
+    grid-template-columns: 1fr;
+  }
+}

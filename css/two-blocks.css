@@ -1,0 +1,18 @@
+.two-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.two-blocks__item {
+  background-color: #FFF;
+  border-top: 3px solid #910A2D;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (max-width: 667px) {
+  .two-blocks {
+    grid-template-columns: 1fr;
+  }
+}

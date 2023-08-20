@@ -1,0 +1,146 @@
+.action {
+  padding: 68px 0 77px;
+}
+.action__container {
+  background-color: #F4F4F4;
+  display: flex;
+}
+.action__img-wrap {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 320px;
+}
+.action__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.action__banner {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  display: block;
+  width: 119px;
+  height: 47px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg class='action__banner-svg' width='119' height='47' viewBox='0 0 119 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0H119L107.5 23.5L119 47H0V0Z' fill='url(%23paint0_linear_1587_3)'/%3e%3cpath d='M21.1172 31L25.5117 13.668H29.9297L33.7734 31H30.2109L29.4023 26.4883H25.6758L24.6445 31H21.1172ZM26.0859 23.9219H28.9922L27.668 15.8594L26.0859 23.9219Z' fill='white'/%3e%3cpath d='M35.1328 31V13.668H38.4258V21.1797L42.4102 13.668H46.125L41.7422 21.1797L46.2773 31H42.5977L39.7266 24.0859L38.4258 25.7969V31H35.1328Z' fill='white'/%3e%3cpath d='M48 31V13.668H51.293V28.3633H55.6406V13.668H58.9219V28.3633H59.9766V34.5039H56.9062V31H48Z' fill='white'/%3e%3cpath d='M61.8516 31V13.668H64.9336V20.1484C64.9336 22.9922 64.7969 25.0352 64.5234 26.2773H64.5469L69.3398 13.668H72.8906V31H69.8203V24.4492C69.8203 21.6914 69.957 19.6836 70.2305 18.4258H70.207L65.4141 31H61.8516Z' fill='white'/%3e%3cpath d='M74.5195 31L77.8828 23.5586C77.0391 23.1758 76.375 22.5508 75.8906 21.6836C75.4062 20.8164 75.1641 19.832 75.1641 18.7305C75.1641 17.793 75.3359 16.9453 75.6797 16.1875C76.0312 15.4219 76.5469 14.8125 77.2266 14.3594C77.9141 13.8984 78.7148 13.668 79.6289 13.668H85.9688V31H82.6758V23.9453H81.0703L78.0938 31H74.5195ZM78.5273 18.7891C78.5273 19.625 78.7383 20.2656 79.1602 20.7109C79.582 21.1562 80.2031 21.3789 81.0234 21.3789H82.6758V16.2344H81.0234C80.2031 16.2344 79.582 16.457 79.1602 16.9023C78.7383 17.3398 78.5273 17.9688 78.5273 18.7891Z' fill='white'/%3e%3cpath d='M87.9375 31V27.9062H90.8086V31H87.9375ZM87.9375 20.8516V13.668H90.8086V20.8516L90.3984 26.4883H88.5117L87.9375 20.8516Z' fill='white'/%3e%3cdefs%3e%3clinearGradient id='paint0_linear_1587_3' x1='54.3035' y1='-4.81688e-08' x2='54.3035' y2='47' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23910A2D'/%3e%3cstop offset='1' stop-color='%23B31940'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+.action__content {
+  padding: 39px 50px 30px 0;
+}
+.action__text {
+  margin-left: 68px;
+  margin-bottom: 31px;
+  font-size: 21px;
+  line-height: 1.5;
+}
+.action__more {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.action__more::before {
+  content: '';
+  flex-grow: 1;
+  width: 100%;
+  height: 1px;
+  background-color: #CECECE;
+}
+.action__more-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 2.48;
+  letter-spacing: 1.365px;
+  color: #4E4E4E;
+  text-transform: uppercase;
+}
+.action__arrow {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #910A2D;
+  transition: 0.5s;
+}
+.action__icon {
+  color: #fff;
+}
+.action__more-link:hover {
+  color: #910A2D;
+}
+.action__more-link:hover .action__arrow {
+  padding-left: 15px;
+}
+@media (max-width: 1199px) {
+  .action__content {
+    padding: 30px 30px 30px 0;
+  }
+  .action__text {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1023px) {
+  .action {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 839px) {
+  .action__content {
+    padding: 20px 30px 10px 0;
+  }
+  .action__text {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 670px) {
+  .action__content {
+    padding: 10px 20px;
+  }
+  .action__text {
+    margin-left: 0;
+    font-size: 14px;
+}
+  .action__more {
+    gap: unset;
+  }
+  .action__more::before {
+    display: none;
+  }
+  .action__more-link {
+    gap: 10px;
+  }
+  .action__arrow {
+    width: 34px;
+    height: 34px;
+  }
+  .action__icon {
+    width: 12px;
+  }
+  .action__img-wrap {
+    max-width: 230px;
+  }
+}
+@media (max-width: 567px) {
+  .action__img-wrap {
+    max-width: 180px;
+  }
+}
+@media (max-width: 428px) {
+  .action__img-wrap {
+    max-width: 320px;
+    align-self: center;
+  }
+  .action__container {
+    flex-direction: column;
+  }
+}
